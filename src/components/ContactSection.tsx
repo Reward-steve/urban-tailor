@@ -10,14 +10,22 @@ import {
   FaWhatsapp,
   FaFacebookF,
 } from "react-icons/fa";
+import { RiLoader2Line } from "react-icons/ri";
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate successful submission
-    setTimeout(() => setSubmitted(true), 1000);
+    setLoading(true);
+
+    setTimeout(() => {
+      setSubmitted(true);
+      setLoading(false);
+      const form = e.target as HTMLFormElement;
+      form.reset();
+    }, 1000);
   };
 
   return (
@@ -105,9 +113,10 @@ export default function ContactSection() {
               </label>
               <input
                 id="name"
+                name="name"
                 type="text"
-                className="w-full px-4 py-2 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
                 required
+                className="w-full px-4 py-2 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
               />
             </div>
 
@@ -117,9 +126,10 @@ export default function ContactSection() {
               </label>
               <input
                 id="email"
+                name="email"
                 type="email"
-                className="w-full px-4 py-2 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
                 required
+                className="w-full px-4 py-2 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
               />
             </div>
 
@@ -129,29 +139,40 @@ export default function ContactSection() {
               </label>
               <textarea
                 id="message"
+                name="message"
                 rows={4}
-                className="w-full px-4 py-2 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
                 required
+                className="w-full px-4 py-2 rounded-md bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500"
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="w-full py-3 bg-green-600 text-white rounded-md font-semibold hover:bg-green-700 transition"
+              disabled={loading}
+              className={`w-full py-3 rounded-md font-semibold flex justify-center items-center transition text-white ${
+                loading
+                  ? "bg-green-400 cursor-not-allowed"
+                  : "bg-green-600 hover:bg-green-700"
+              }`}
             >
-              Send Message
+              {!loading ? (
+                "Send Message"
+              ) : (
+                <RiLoader2Line
+                  size={20}
+                  className="animate-spin text-white font-bold"
+                />
+              )}
             </button>
           </form>
         )}
       </div>
 
-      {/* Map Placeholder */}
-      <div className="mt-16">
+      {/* Map Embed (Responsive) */}
+      <div className="relative pt-[56.25%] mt-16 rounded-xl overflow-hidden shadow-md">
         <iframe
           src="https://maps.google.com/maps?q=Lagos,%20Nigeria&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          width="100%"
-          height="300"
-          className="rounded-xl shadow-md border-none"
+          className="absolute top-0 left-0 w-full h-full border-none"
           loading="lazy"
         ></iframe>
       </div>
