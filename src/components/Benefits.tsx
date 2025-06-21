@@ -25,7 +25,7 @@ export const Benefits = ({ imgPos = "left", data }: BenefitsProps) => {
     <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap">
       {/* Image Section */}
       <motion.div
-        className={`flex items-center justify-center w-full lg:w-1/2 ${
+        className={`flex items-center justify-center w-full lg:w-1/2s ${
           imgPos === "right" ? "lg:order-1" : ""
         }`}
         initial={{ opacity: 0, x: imgPos === "right" ? 100 : -100 }}
