@@ -33,7 +33,7 @@ export const Navbar = () => {
 
   return (
     <div
-      className={`w-full z-50 transition-transform duration-300 py-8 xl:px-0 px-2 ${
+      className={`w-full z-50 transition-transform duration-300 lg:py-8 py-2 xl:px-0 px-2 ${
         showNav ? "translate-y-0" : "-translate-y-full"
       } sticky top-0 backdrop-blur-md bg-white/50 dark:bg-black/30 border-b border-white/30 dark:border-white/10 shadow-md`}
     >

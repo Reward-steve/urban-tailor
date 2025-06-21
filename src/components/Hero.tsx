@@ -43,7 +43,7 @@ export const Hero = () => {
 
         {/* Right Image Section */}
         <motion.div
-          className="w-full lg:w-1/2 lg:justify-end justify-center h-1/2 flex"
+          className="w-full lg:w-1/2 lg:justify-end justify-center h-96 flex"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}

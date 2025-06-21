@@ -11,7 +11,7 @@ export function Footer() {
   return (
     <div className="relative w-full shadow-md backdrop-blur-md bg-white/50 dark:bg-black/30 border-t border-gray-400 dark:border-white/10">
       <Container>
-        <div className="grid max-w-screen-xl grid-cols-1 gap-10 pt-10 mx-auto mt-5 dark:border-gray-700 lg:grid-cols-5">
+        <div className="grid max-w-screen-xl grid-cols-1 gap-10 px-2 pt-10 mx-auto mt-5 dark:border-gray-700 lg:grid-cols-5">
           {/* Brand */}
           <div className="lg:col-span-2">
             <Logo />
