@@ -10,8 +10,20 @@ import { PopupWidget } from "@/components/PopupWidget";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Urban Tailor",
-  description: "Welcome to Urban Tailor",
+  title: "Urban Tailor – Custom Fashion for Every Identity",
+  description:
+    "Discover Urban Tailor – Nigeria's modern fashion brand. Explore custom-made clothing styles for men and women. Elegance meets culture.",
+  keywords: [
+    "Urban Tailor",
+    "Tailor Nigeria",
+    "Custom Fashion",
+    "African Fashion",
+    "Ankara Styles",
+    "Nigerian Tailor",
+    "Men Suit Nigeria",
+    "Native Wears",
+    "Women Dresses",
+  ],
 };
 
 export default function RootLayout({
