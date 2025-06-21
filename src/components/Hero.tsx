@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <>
-      <Container className="flex flex-wrap justify-between items-center min-h-screen px-4 sm:px-6 lg:px-8">
+      <Container className="flex flex-wrap justify-between items-center min-h-[600px] px-4 sm:px-6 lg:px-8">
         {/* Left Text Section */}
         <motion.div
           className="w-full lg:w-1/2 mb-12 lg:mb-0"
