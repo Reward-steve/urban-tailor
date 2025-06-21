@@ -4,53 +4,47 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { Benefits } from "@/components/Benefits";
 import { Video } from "@/components/Video";
 import { Testimonials } from "@/components/Testimonials";
-import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 
 import { benefitOne, benefitTwo } from "@/components/data";
+
 export default function Home() {
   return (
     <Container>
       <Hero />
+
       <SectionTitle
-        preTitle="UrbanTailor Benefits"
-        title=" Why should you use this landing page"
+        preTitle="About Urban Tailor"
+        title="Your Style, Our Passion"
       >
-        UrbanTailor is a free landing page & marketing website template for
-        startups and indie projects. Its built with Next.js & TailwindCSS. And
-        its completely open-source.
+        Urban Tailor is a modern fashion brand delivering elegant, custom-made
+        outfits for bold men and women. We blend culture, creativity, and
+        confidence in every stitch.
       </SectionTitle>
 
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
 
       <SectionTitle
-        preTitle="Watch a video"
-        title="Learn how to fullfil your needs"
+        preTitle="Behind the Stitch"
+        title="See Urban Tailor in Action"
       >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
+        Take a look inside the craftsmanship of fashion—from concept to
+        collection. This is where fabric meets artistry.
       </SectionTitle>
 
-      <Video videoId="fZ0D0cnR88E" />
+      <Video videoId="MG3YLIPYAIk" />
 
       <SectionTitle
-        preTitle="Testimonials"
-        title="Here's what our customers said"
+        preTitle="Happy Clients"
+        title="What Our Customers Are Saying"
       >
-        Testimonials is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        Hear from real clients who trust Urban Tailor for their events,
+        weddings, and everyday standout styles.
       </SectionTitle>
 
       <Testimonials />
 
-      <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
-
-      <Faq />
       <Cta />
     </Container>
   );

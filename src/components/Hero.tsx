@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
 import heroImg from "../../public/img/hero.png";
-
+import { FaWhatsapp } from "react-icons/fa";
 export const Hero = () => {
   return (
     <>
@@ -12,7 +12,8 @@ export const Hero = () => {
               Your Style, Our Passion
             </h1>
             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
-              Custom fits that turn heads. Made for bold fashion lovers.
+              Bespoke fashion for kings and queens. Get custom designs tailored
+              to fit your personality and presence.
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
@@ -22,7 +23,9 @@ export const Hero = () => {
                 rel="noopener noreferrer"
                 className="py-4 px-5 rounded-md hover:bg-green-600 bg-green-500 text-white text-lg"
               >
-                <span>Order Now on WhatsApp</span>
+                <span className="flex gap-2 items-center">
+                  <FaWhatsapp /> Order Now on WhatsApp
+                </span>
               </a>
             </div>
           </div>

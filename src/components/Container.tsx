@@ -8,7 +8,7 @@ interface ContainerProps {
 export function Container(props: Readonly<ContainerProps>) {
   return (
     <div
-      className={`container p-2 mx-auto xl:px-0 ${
+      className={`container p-2 mx-auto xl:px-0 animate-fadeIn ${
         props.className ? props.className : ""
       }`}
     >
