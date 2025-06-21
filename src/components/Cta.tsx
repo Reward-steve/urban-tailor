@@ -17,7 +17,7 @@ export const Cta = () => {
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
           <a
-            href="https://wa.me/2349012345678?text=Hello%2C%20I'm%20interested%20in%20ordering%20a%20custom%20outfit%20from%20Urban%20Tailor."
+            href="https://wa.me/2348098069257?text=Hello%2C%20I'm%20interested%20in%20ordering%20a%20custom%20outfit%20from%20Urban%20Tailor."
             target="_blank"
             rel="noopener noreferrer"
             className="gap-2 items-center flex py-3 mx-auto text-lg font-medium text-center text-white bg-green-600 rounded-md sm:p-4 p-2  hover:bg-green-700 transition"
