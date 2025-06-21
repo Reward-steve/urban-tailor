@@ -4,13 +4,20 @@ import Image from "next/image";
 import { Container } from "@/components/Container";
 import heroImg from "../../public/img/urban.jpg";
 import { FaWhatsapp } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
     <>
-      <Container className="flex flex-wrap items-center h-screen">
+      <Container className="flex flex-wrap justify-between items-center min-h-screen px-4 sm:px-6 lg:px-8">
         {/* Left Text Section */}
-        <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
+        <motion.div
+          className="w-full lg:w-1/2 mb-12 lg:mb-0"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           <p className="text-green-600 font-semibold uppercase mb-2 text-sm tracking-wide">
             Urban Tailor
           </p>
@@ -27,15 +34,21 @@ export const Hero = () => {
               href="https://wa.me/2349012345678"
               target="_blank"
               rel="noopener noreferrer"
-              className="py-4 px-5 rounded-md bg-green-500 hover:bg-green-600 text-white text-lg transition-transform hover:scale-105 flex items-center gap-2"
+              className="sm:p-4 p-2 rounded-md bg-green-500 hover:bg-green-600 text-white text-lg transition-transform hover:scale-105 flex items-center gap-2"
             >
               <FaWhatsapp /> Order Now on WhatsApp
             </a>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Image Section */}
-        <div className="w-full lg:w-1/2 flex justify-center">
+        <motion.div
+          className="w-full lg:w-1/2 lg:justify-end justify-center h-1/2 flex"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+        >
           <Image
             src={heroImg}
             alt="Urban Tailor fashion showcase"
@@ -43,12 +56,23 @@ export const Hero = () => {
             loading="eager"
             placeholder="blur"
           />
-        </div>
+        </motion.div>
       </Container>
-      <div className="text-center mt-8 text-gray-700 dark:text-white">
-        Trusted by <span className="text-green-600 font-semibold">2,000+</span>{" "}
-        satisfied customers & counting
-      </div>
+
+      {/* Trust Message */}
+      <Container>
+        <motion.div
+          className="text-center mt-8 text-gray-700 dark:text-white"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
+          Trusted by{" "}
+          <span className="text-green-600 font-semibold">2,000+</span> satisfied
+          customers & counting
+        </motion.div>
+      </Container>
     </>
   );
 };
