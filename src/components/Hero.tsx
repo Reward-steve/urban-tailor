@@ -31,7 +31,7 @@ export const Hero = () => {
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-3 sm:space-y-0 mt-4">
             <a
-              href="https://wa.me/2349012345678"
+              href="https://wa.me/2348098069257"
               target="_blank"
               rel="noopener noreferrer"
               className="sm:p-4 p-2 rounded-md bg-green-500 hover:bg-green-600 text-white text-lg transition-transform hover:scale-105 flex items-center gap-2"
