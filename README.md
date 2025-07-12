@@ -1,45 +1,53 @@
-# 👗 Urban Tailor
+# 👗 Urban Tailor – Next.js + Tailwind CSS + TypeScript
 
-A modern tailor and fashion brand website built in just 3 days using **Next.js**, **Tailwind CSS**, and **TypeScript**.  
-It showcases custom fashion styles with elegant image galleries, a smooth user experience, and fully responsive design.
+A sleek and responsive tailor/fashion brand landing page built in just 3 days using modern frontend technologies.  
+It showcases fashion categories, elegant image galleries, reusable components, and smooth user experience — all mobile-ready.
 
 ---
 
 ## ✨ Features
 
-- 🎨 **Modern UI** with glassmorphism and smooth design
-- 🌗 **Dark/Light Theme Switcher** (toggleable)
-- 📱 **Fully Responsive** on all screen sizes (mobile → desktop)
-- 🧍‍♀️ **Style Categories**:
+- 🎨 **Modern UI** with elegant glassmorphism styling
+- 🌗 **Dark/Light Theme Toggle**  
+- 📱 **Fully responsive** across all screen sizes
+- 🔍 **Image modal previews** per style item
+- 📂 **Style categories**:
   - Female Dress
   - Women on Suit
   - Men on Suit
   - Native
   - Urban Casual
-- 🔍 **Image Modal Previews** for each style item
-- 🖼️ **About Page** with stacked gallery layout
-- ❓ **FAQ Section** with toggleable answers
-- 📬 **Contact Form** integrated with [Web3Forms](https://web3forms.com/) _(can be replaced/customized)_
-- ⚙️ **Reusable Components** for clean and scalable development
+- 🖼️ **About page** with stacked image layout
+- ❓ **FAQ section** with collapsible answers
+- 📬 **Contact form** powered by [Web3Forms](https://web3forms.com/)
+- ⚙️ **Reusable components** for better scalability
 
 ---
 
 ## 🛠 Tech Stack
 
-- [Next.js (App Router)](https://nextjs.org/docs/app)
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Headless UI](https://headlessui.com/) (for Disclosure/Mobile Nav)
-- [React Icons](https://react-icons.github.io/react-icons/)
-- [Web3Forms](https://web3forms.com/) (for contact form handling)
+- **Framework**: Next.js (App Router)  
+- **Language**: TypeScript  
+- **UI Library**: React, Headless UI  
+- **Styling**: Tailwind CSS  
+- **Icons**: React Icons  
+- **Form Handling**: Web3Forms  
+- **Deployment**: Vercel
 
 ---
 
-## 📦 Setup
+## 🔗 Live Demo
 
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/your-username/urban-tailor.git
-   cd urban-tailor
-   ```
+👉 [https://urban-tailor.vercel.app](https://urban-tailor.vercel.app)
+
+---
+
+## 📦 Getting Started
+
+To run the project locally:
+
+```bash
+git clone https://github.com/Reward-steve/urban-tailor.git
+cd urban-tailor
+npm install
+npm run dev
